@@ -1,0 +1,160 @@
+.taskDetail-appContainer {
+  color: #e0e0e0;
+  position: absolute;
+  top: 20vh;
+  font-size: 1.2em;
+}
+
+.task-details-section {
+  display: grid;
+  position: relative;
+  top: 2vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 5px;
+  padding: 10px;
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+  background-color: #121212;
+  color: #e0e0e0;
+  grid-template-areas:
+    "category-label category-value"
+    "title-label title-value"
+    "created-by-label created-by-value"
+    "task-text task-text"
+    "edit-button edit-button";
+}
+
+.taskDetailh1 {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  font-size: 40px;
+  background-color: #121212;
+}
+
+.category-label {
+  grid-area: category-label;
+}
+
+.category-value {
+  grid-area: category-value;
+}
+
+.title-label {
+  grid-area: title-label;
+}
+
+.title-value {
+  grid-area: title-value;
+}
+
+.created-by-label {
+  grid-area: created-by-label;
+}
+
+.created-by-value {
+  grid-area: created-by-value;
+}
+
+.task-text {
+  grid-area: task-text;
+  margin-top: 10px;
+  color: #e0e0e0;
+}
+
+.detailsEditButton {
+  width: 100px;
+  padding: 10px;
+  background-color: #3b82f6;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.detailsEditButton:hover {
+  background-color: #555;
+}
+
+.comment-section {
+  margin-top: 20px;
+  color: #e0e0e0;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 800px;
+  height: 150px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.comment-form textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3b82f6;
+  border-radius: 4px;
+  font-size: 1em;
+  flex-grow: 1;
+  height: calc(100% - 40px);
+  margin: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.comment-form button {
+  width: 100px;
+  padding: 10px;
+  background-color: #3b82f6;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.comment-form button:hover {
+  background-color: #555;
+}
+
+.comment-table-container {
+  margin-top: 10px;
+  width: 800px;
+}
+
+.comment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+  color: #e0e0e0;
+}
+
+.comment-table th,
+.comment-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #3b82f6;
+}
+
+.comment-table th {
+  background-color: #3b82f6;
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+.comment-row td {
+ 
+}
+
+
+
+.comment-table tbody tr:last-child td {
+  border-bottom: none;
+}

@@ -1,0 +1,92 @@
+.signInh1 {
+  color: red;
+  margin-left: 25%;
+  margin-top: 15%;
+}
+
+.appcontainerSignIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.signInFormContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: center;
+  gap: 20px;
+  width: 600px
+  margin: 0 auto;
+  margin-top: 20%;
+  padding: 20px;
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.signInFormStyle {
+  display: contents;
+  margin-bottom: 10px;
+}
+
+.signInFormStyle label {
+  font-weight: bold;
+  align-self: center;
+}
+
+.signInFormStyle textarea {
+  resize: none;
+}
+
+
+
+
+.SignInButton2 {
+  width: 100px;
+  padding: 10px;
+  background-color: #3b82f6;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.signInStyle button:hover {
+  background-color: #555;
+}
+
+.SignIn-Form-Fields {
+  color: red;
+  padding: 10px;
+}
+
+.SignIn-Form-Fields2 {
+  color: red;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.signInLabel {
+  color: red;
+  font-size: 1.2em;
+  padding: 10px;
+  margin-bottom: 5pz;
+}
+.signInLabel {
+  color: red;
+  font-size: 1.2em;
+  padding: 10px;
+  margin-bottom: 5pz;
+}
+
+.signInLabel2 {
+  color: red;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+ 
