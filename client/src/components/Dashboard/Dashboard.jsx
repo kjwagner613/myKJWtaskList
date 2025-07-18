@@ -64,58 +64,59 @@ const Dashboard = () => {
   };
 
   return (
-    
-    <div className="dashboard-container">
 
-      <div className="stats-grid">
-        <div className="stats-board">
-          <p className="stats-title">Tasks by Category</p>
-          <table className="statsTable">
-            <thead>
-              <tr>
-                <th>Category</th>
-                <th>Count</th>
-                <th>Open Subtasks</th>
-              </tr>
-            </thead>            <tbody>
-              {Object.keys(stats.categoryCounts).map((category) => {
-                const categoryTasks = tasks.filter(task => (task.category || 'Uncategorized') === category);
-                const totalOpenSubtasks = categoryTasks.reduce((total, task) => {
-                  return total + (task.subtasks && task.subtasks.length > 0 ? countOpenSubtasks(task.subtasks) : 0);
-                }, 0);
+    // <div className="newGrid">
+    <div className="taskGridWrap">
 
-                return (
-                  <tr key={category}>
-                    <td>{category}</td>
-                    <td>{stats.categoryCounts[category]}</td>
-                    <td>{totalOpenSubtasks || '—'}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-        <div className="stats-board">
-          <p className="stats-title">Tasks Older Than 5 Days</p>
-          <table className="statsTable">
-            <thead>
-              <tr>
-                <th>Category</th>
-                <th>Count</th>
-              </tr>
-            </thead>
-            <tbody>
-              {Object.keys(stats.oldTasksCounts).map((category) => (
+      <div className="gridShell">
+        <p className="stats-title">Tasks by Category</p>
+        <table className="statsTable">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Count</th>
+              <th>Open Subtasks</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Object.keys(stats.categoryCounts).map((category) => {
+              const categoryTasks = tasks.filter(task => (task.category || 'Uncategorized') === category);
+              const totalOpenSubtasks = categoryTasks.reduce((total, task) => {
+                return total + (task.subtasks && task.subtasks.length > 0 ? countOpenSubtasks(task.subtasks) : 0);
+              }, 0);
+
+              return (
                 <tr key={category}>
                   <td>{category}</td>
-                  <td>{stats.oldTasksCounts[category]}</td>
+                  <td>{stats.categoryCounts[category]}</td>
+                  <td>{totalOpenSubtasks || '—'}</td>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+      <div className="gridShell">
+        <p className="stats-title">Tasks Older Than 5 Days</p>
+        <table className="gridInternal">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Object.keys(stats.oldTasksCounts).map((category) => (
+              <tr key={category}>
+                <td>{category}</td>
+                <td>{stats.oldTasksCounts[category]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
+    // </div>
   );
 };
 

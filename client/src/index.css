@@ -1,0 +1,57 @@
+:root {
+  --font-title: 2rem;
+  --font-base: 1rem;
+  --font-sm: 0.875rem;
+
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --margin-top: 18%;
+  --margin-left: 10%;
+
+  --row-height: 64px;
+  --col-width: 320px;
+
+  --color-bg: #121212;
+  --color-accent: #ff5050;
+  --color-text: #eee;
+}
+
+.fs-title {
+  font-size: var(--font-title);
+}
+.sp-md {
+  margin: var(--space-md);
+}
+.row-fixed {
+  height: var(--row-height);
+}
+.fs-base {
+  font-size: var(--font-base);
+}
+.fs-sm {
+  font-size: var(--font-sm);
+}
+
+.sp-md {
+  margin: var(--space-md);
+}
+.px-lg {
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+}
+
+.row-fixed {
+  height: var(--row-height);
+}
+.input-styled {
+  height: var(--input-height);
+  font-size: var(--font-base);
+  padding: var(--space-sm);
+  border-radius: 0.25rem;
+}
+
+.bg-dark-theme {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}

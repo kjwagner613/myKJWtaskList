@@ -1,13 +1,25 @@
-import './Landing.css'
+import "./Landing.css";
 
 const Landing = () => {
   return (
-    <main className="landing-container">
-      <h1 className='todo'>kjw Task List</h1>
-      <h3>A version of ToDo Task List</h3>
-      <h4>Customized for personal use.</h4>
-      <img className="imageLogo" src="https://i.imghippo.com/files/anP8808iHg.webp" alt="LogoImagefprGameStrategy" border="0" />
-    </main>
+    <>
+      <div className="newGrid">
+      <main className=" text-center mt-[4vh]">
+        <h1 class="text-danger">kjw Task List</h1>
+        <div class="card p-3 shadow-sm">
+          <p class="text-muted">A version of ToDo Task List</p>
+          <p>Customized for personal use</p>
+        </div>
+
+        <img
+          className="imageLogo"
+          src="https://i.imghippo.com/files/anP8808iHg.webp"
+          alt="LogoImagefprGameStrategy"
+          border="0"
+        />
+      </main>
+      </div>
+    </>
   );
 };
 

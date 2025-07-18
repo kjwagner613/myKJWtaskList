@@ -1,0 +1,24 @@
+:root {
+  // Typography
+  --font-title: 2rem;        // page titles, headers
+  --font-base: 1rem;         // standard text
+  --font-sm: 0.875rem;       // input labels, hint text
+
+  // Spacing
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  // Layout Dimensions
+  --input-height: 48px;      // standard form field
+  --row-height: 64px;        // grid row default
+  --col-width: 320px;        // fixed column width
+
+  // Colors
+  --color-bg: #121212;       // background
+  --color-text: #eeeeee;     // default text
+  --color-accent: #ff5050;   // highlights, titles
+  --color-muted: #888888;    // secondary text
+}

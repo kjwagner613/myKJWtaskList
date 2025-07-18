@@ -36,10 +36,39 @@ Authentication is via JWT tokens
 
 ### Next Steps
 
-1- Add family groups so they share tasks and request family members to pick up a task a user would like to assign to them.
+### These enhancements are currently in Development as of 7/17/25
 
-2- Prerequisites for task linking.
+## Functional Blueprint: Task List Interaction System
+## 📌 Task Slot Memory
+Tasks are assigned visual slots based on an indexed array.
 
-3- Project grouping
+Drag-and-drop actions update task position and persist this order via localStorage.
 
-4- Mobile Compatibility
+On app load, tasks are rendered using the stored slot structure, retaining user-defined layout.
+
+## 🖱️ Interaction Effects
+Each task responds visually to user engagement:
+
+Click → Ripple or pulse animation.
+
+Edit → Brief “jitter” to signal recognition.
+
+Drag/Drop → Ghost trail or static echo to preserve kinetic memory.
+
+## 🔴 Critical Mode
+Toggle triggers full red-toned overlay state for urgent visual clarity.
+
+Tasks marked critical (late, flagged, high-priority with low progress) are:
+
+Pulsing subtly with border animation.
+
+Displaying trigger cause as blurred text above or beside their container (e.g., “Missed deadline”).
+
+Overlay dims non-critical tasks, placing emphasis on attention targets.
+
+## 🧪 DB Toggle System
+App operates in either Local Mode or Synced Mode.
+
+Developer toggle switches between localStorage and external DB (e.g. Firebase).
+
+DB mode enables cross-device slot memory, syncing user-defined order securely across platforms.

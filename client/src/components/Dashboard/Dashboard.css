@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   border: 2px solid blue;
+  margin-top: 20vh;
 }
 
 .stats-board {
